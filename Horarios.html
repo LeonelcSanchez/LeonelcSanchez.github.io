@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Horarios EETP 458</title>
+  <link rel="stylesheet" href="mod.css">
+   <script src="https://kit.fontawesome.com/985e8b9d33.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="btn-menu">
+      <label for="btn-menu"><i class="fa-solid fa-bars"></i></label>
+    </div>
+   
+  </div>
+</header>
+<div class="capa">
+  
+</div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+  <div class="cont-menu">
+    <img src="fotos/eetp-removebg-preview (1).png" alt="" class="img1">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="Nosotros.html">Nosotros</a>
+      <a href="Novedades.html">Novedades</a>
+      <a href="Calendario.html">Calendario</a>
+      <a href="Horarios.html">Horarios</a>
+      <a href="Contacto.html">Contactanos</a>
+    </nav>
+    <label for="btn-menu"><i class="fa-solid fa-x"></i></label>
+  </div>
+</div>
+
+  <div class="contenedor">
+    <h2>Horarios E.E.T.P 458</h2>
+
+    <div class="selector">
+      <label for="curso">Curso:</label>
+      <select id="curso">
+        <option value="">Seleccionar curso</option>
+        <option value="1">1°</option>
+        <option value="2">2°</option>
+        <option value="3">3°</option>
+        <option value="4">4°</option>
+        <option value="5">5°</option>
+        <option value="6">6°</option>
+      </select>
+
+      <label for="division">División:</label>
+      <select id="division">
+        <option value="">Seleccionar división</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        
+      </select>
+      <button onclick="mostrarHorario()">Mostrar Horario</button>
+    </div>
+
+<div id="horario"></div>
+  </div>
+
+  <script src="mod.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+ /* Header con logo y menú */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color:#666666;
+    color: white;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav {
+    position: relative;
+}
+
+nav .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .menu li {
+    margin: 0 20px;
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+nav .menu li a:hover {
+    border-bottom: 2px solid rgb(241, 118, 36);
+		padding-bottom: 5px;
+		color:rgb(241, 118, 36);
+}
+
+/* Icono de menú hamburguesa */
+nav .menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+ 
+ 
+ .carrusel {
+  position: relative;
+  width: 90%;
+  max-width: 500px; /* tamaño del carrusel */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+
+  margin: 40px auto; /* 🔹 centra SOLO el carrusel */
+}
+
+ 
+ .carrusel {
+      position: relative;
+      width: 90%;
+      max-width: 500px; /* 🔹 MÁS CHICO */
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 280px; /* 🔹 ALTO REDUCIDO */
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .descripcion {
+      position: absolute;
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /* Botones */
+    .btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.4);
+      color: #fff;
+      border: none;
+      font-size: 22px; /* 🔹 MÁS CHICO */
+      padding: 6px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: rgba(0,0,0,0.7);
+    }
+
+    .prev {
+      left: 8px;
+    }
+
+    .next {
+      right: 8px;
+    }
+
+    /* Indicadores */
+    .indicadores {
+      position: absolute;
+      bottom: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+    }
+
+    .indicadores div {
+      width: 10px;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .indicadores .activo {
+      background: #fff;
+    }
+/* Pie de página */
+footer {
+    background-color: #505050;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .footer-logo img {
+    width: 100px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        display: none; /* Ocultar el menú por defecto */
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav .menu li {
+        margin: 10px 0;
+    }
+
+    nav .menu-toggle {
+        display: block; /* Mostrar el icono de hamburguesa */
+    }
+
+    nav .menu.active {
+        display: flex; /* Mostrar el menú cuando se activa */
+    }
+
+    .carousel-images img {
+        height: 300px;
+    }
+
+    .info h1 {
+        font-size: 1.5rem;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+    }
+}
+footer .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #ffffff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+    .map-container iframe {
+    width: 100%;  /* Ajusta al 100% del contenedor */
+    max-width: 300px;  /* Máximo de 300px */
+    height: 200px;  /* Altura ajustada */
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+	footer .menu a:hover{
+		border-bottom: 2px solid rgb(241, 118, 36);
+		padding-bottom: 5px;
+		color:rgb(241, 118, 36);
+
+	}
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  background-color: #004080;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.submenu {
+  display: none;
+  position: absolute;
+
+  background-color: #666666;
+  min-width: 200px;
+  z-index: 999;
+}
+
+.submenu li a {
+  padding: 12px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+
+.dropdown:hover .submenu {
+  display: block;
+}

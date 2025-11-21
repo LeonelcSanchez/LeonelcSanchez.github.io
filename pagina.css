@@ -1,0 +1,114 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+    color: #fff;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #8798d1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color:#666666;
+    color: white;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav {
+    position: relative;
+}
+
+nav .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .menu li {
+    margin: 0 20px;
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+nav .menu li a:hover {
+    border-bottom: 2px solid rgb(241, 118, 36);
+		padding-bottom: 5px;
+		color:rgb(241, 118, 36);
+}
+
+/* Icono de menú hamburguesa */
+nav .menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color:  #423ab6;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para los iconos de redes sociales */
+  .social-media {
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #c75910; /* Cambia el color al pasar el mouse */
+  }
+  
